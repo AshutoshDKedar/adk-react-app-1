@@ -7,14 +7,19 @@
   width: 100%;
 }
 
+.tile-container > .title{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
 .tile-container > .tile{
   position: relative;
   width: 30%;
   height: 315px;
   display: inline-block;
-  box-shadow: 0px 5px 5px 0px gray;
+  box-shadow: 0px 10px 10px 0px gray;
   margin: 0% 1.66%;
-  border-radius: 25px 25px 0px 0px;
+  border-radius: 25px;
 }
 
 .tile-container > .tile > .poster{
@@ -23,7 +28,7 @@
 }
 
 .tile-container > .tile > .poster > img{
-  height: 200px;
+  height: 175px;
   object-fit: cover;
   width: 100%;
   border-radius: 25px;

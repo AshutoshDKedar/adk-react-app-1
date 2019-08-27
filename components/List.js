@@ -12,8 +12,8 @@ class List extends Component{
   render(){
     return(
       <React.Fragment>
-        <h5>Movies Details :</h5>
         <div className="tile-container">
+        <h3 className="title">-: Movies Details :-</h3>
          {
           this.state.jsonData.map(function(item){
             return (
