@@ -20,7 +20,7 @@ class List extends Component{
               <div className="tile">
                 <div className="poster"><img src={item.poster}/></div>
                 <div className="description">
-                  <h3>{item.filmName}</h3>
+                  <h1>{item.filmName}</h1>
                 </div>
               </div>
             );
