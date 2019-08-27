@@ -15,11 +15,16 @@
 }
 
 .tile-container > .tile > .poster{
-  
+  height: 200px;
+  padding: 20px;
 }
 
 .tile-container > .tile > .poster > img{
-  height: 100px;
-  object-fit: contain;
+  height: 200px;
+  object-fit: cover;
   width: 100%;
+}
+
+.tile-container > .tile > .poster > .description{
+  padding: 20px;
 }

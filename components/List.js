@@ -12,14 +12,14 @@ class List extends Component{
   render(){
     return(
       <React.Fragment>
-        <h5>Information :</h5>
+        <h5>Movies Details :</h5>
         <div className="tile-container">
          {
           this.state.jsonData.map(function(item){
             return (
               <div className="tile">
                 <div className="poster"><img src={item.poster}/></div>
-                {item.filmName}
+                <div className="description">{item.filmName}</div>
               </div>
             );
           })
