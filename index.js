@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Title />
+        <Title/>
       </React.Fragment>
     );
   }
