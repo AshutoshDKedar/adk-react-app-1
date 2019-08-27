@@ -12,7 +12,11 @@ class List extends Component{
   render(){
     return(
       <React.Fragment>
-        <h5>Welcome to React JS..!</h5>
+        <ul>
+          this.state.jsonData.map(function(item){
+            <li>{ item.filmName } - { item.heroName }</li>
+          })
+        </ul>
       </React.Fragment>
     );
   }
