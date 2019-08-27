@@ -15,12 +15,13 @@
 .tile-container > .tile{
   position: relative;
   width: 20%;
-  height: 350px;
+  height: 315px;
   display: inline-block;
   box-shadow: 0px 0px 10px 0px gray;
-  margin: 0% 2.66%;
+  margin: 0% 1.35%;
   border-radius: 15%;
   overflow: hidden;
+  border: 15px solid white;
 }
 
 .tile-container > .tile > .poster{
@@ -39,10 +40,10 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.50);
   height: 100%;
   width: 100%;
-  border-radius: 15%;
+  border-radius: 0%;
   visibility: hidden;
   transition: all 0.025s ease-in-out;
 }
@@ -53,10 +54,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: bold;
-  font-size: 50px;
+  font-size: 45px;
   margin: 0px;
   text-shadow: 0px 5px 10px gray;
   transition: all 0.025s ease-in-out;
+}
+
+.tile-container > .tile:hover{
+  border: 15px solid white;
 }
 
 .tile-container > .tile:hover .description{
