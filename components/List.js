@@ -19,7 +19,9 @@ class List extends Component{
             return (
               <div className="tile">
                 <div className="poster"><img src={item.poster}/></div>
-                <div className="description">{item.filmName}</div>
+                <div className="description">
+                  <h3>{item.filmName}</h3>
+                </div>
               </div>
             );
           })
