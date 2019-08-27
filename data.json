@@ -1,5 +1,5 @@
 [
-  {"filmName":"Dangal", "heroName":"Amir Khan"},
-  {"filmName":"Bharat", "heroName":"Salman Khan"},
-  {"filmName":"Gold", "heroName":"Akshay Kumar"}
+  {"filmName":"Dangal", "heroName":"Amir Khan", "poster":"https://static-koimoi.akamaized.net/wp-content/new-galleries/2016/12/dangal-review-1.jpg"},
+  {"filmName":"Bharat", "heroName":"Salman Khan", "poster":"https://static-koimoi.akamaized.net/wp-content/new-galleries/2016/12/dangal-review-1.jpg"},
+  {"filmName":"Gold", "heroName":"Akshay Kumar", "poster":"https://static-koimoi.akamaized.net/wp-content/new-galleries/2016/12/dangal-review-1.jpg"}
 ]

@@ -7,9 +7,13 @@
   width: 100%;
 }
 
-.tile{
+.tile-container > .tile{
   position: relative;
   width: 33.33%;
   height: 315px;
   display: inline-block;
+}
+
+.tile-container > .poster{
+  object-fit: contain;
 }
