@@ -18,7 +18,7 @@ class List extends Component{
           this.state.jsonData.map(function(item){
             return (
               <div className="tile">
-                <div className="poster"><img src={item.poster} /></div>
+                <div className="poster"><img src={item.poster}/></div>
                 {item.filmName}
               </div>
             );

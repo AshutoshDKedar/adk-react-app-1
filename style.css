@@ -14,6 +14,6 @@
   display: inline-block;
 }
 
-.tile-container > .poster{
+.tile-container > .tile > .poster{
   object-fit: contain;
 }
