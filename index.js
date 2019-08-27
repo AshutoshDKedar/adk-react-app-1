@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <Title />
-        <list />
+        <List />
       </React.Fragment>
     );
   }
