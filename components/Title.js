@@ -4,7 +4,8 @@ class Title extends Component{
   render(){
     return(
       <React.Fragment>
-        <h5>Welcome to React JS..!</h5>
+        <h3>Welcome to React JS..!</h3>
+        <hr/>
       </React.Fragment>
     );
   }

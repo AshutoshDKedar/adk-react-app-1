@@ -10,13 +10,22 @@ class List extends Component{
   }
   
   render(){
+    var styles = {
+      textAlign: "center",
+      color: "red"
+    }
     return(
       <React.Fragment>
-        <ul>
+        <h5>Information :</h5>
+        <table border="1" style={styles}>
+        <th>Film Name</th>
+        <th>Hero Name</th>
+         {
           this.state.jsonData.map(function(item){
-            <li>{ item.filmName } - { item.heroName }</li>
+            return (<tr><td>{ item.filmName }</td> <td>{ item.heroName }</td></tr>);
           })
-        </ul>
+         } 
+        </table>
       </React.Fragment>
     );
   }
