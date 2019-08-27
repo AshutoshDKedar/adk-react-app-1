@@ -14,18 +14,17 @@
 
 .tile-container > .tile{
   position: relative;
-  width: 30%;
-  height: 315px;
+  width: 20%;
+  height: 350px;
   display: inline-block;
   box-shadow: 0px 0px 10px 0px gray;
-  margin: 0% 1.66%;
+  margin: 0% 2.66%;
   border-radius: 15%;
   overflow: hidden;
 }
 
 .tile-container > .tile > .poster{
   height: 100%;
-  padding: 0px 0px 20px 0px;
 }
 
 .tile-container > .tile > .poster > img{
@@ -33,18 +32,19 @@
   object-fit: cover;
   width: 100%;
   border-radius: 5%;
+  transition: all 0.25s ease-in-out;
 }
 
 .tile-container > .tile > .description{
   position: absolute;
   top: 0px;
   left: 0px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.75);
   height: 100%;
   width: 100%;
   border-radius: 15%;
   visibility: hidden;
-  transition: all 0.05s ease-in-out;
+  transition: all 0.025s ease-in-out;
 }
 
 .tile-container > .tile > .description > h1{
@@ -64,5 +64,5 @@
 }
 
 .tile-container > .tile:hover .poster > img{
-  transform: scale(1.5);
+  transform: scale(1.25);
 }
