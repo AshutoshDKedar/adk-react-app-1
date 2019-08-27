@@ -15,5 +15,11 @@
 }
 
 .tile-container > .tile > .poster{
+  
+}
+
+.tile-container > .tile > .poster > img{
+  height: 100px;
   object-fit: contain;
+  width: 100%;
 }
