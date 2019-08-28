@@ -8,7 +8,7 @@ class Registration extends Component{
       <React.Fragment>
         <h3>Create Your Account :-</h3>
         <hr/>
-        <form className={classes.container} noValidate autoComplete="off">
+        <form noValidate autoComplete="off">
           <TextField id="standard-name" label="Name" margin="normal"/>
         </form>
       </React.Fragment>
