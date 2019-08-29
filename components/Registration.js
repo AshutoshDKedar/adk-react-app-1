@@ -8,6 +8,23 @@ import FormLabel from '@material-ui/core/FormLabel';
 import Button from '@material-ui/core/Button';
 
 class Registration extends Component{
+  constructor(){
+    super();
+    this.state = {
+      username:'',
+      password:'',
+      confirmPassword:'',
+      gender:'',
+      mobileNumber:'',
+      city:''
+    }
+  }
+  registerUser = (event)=>{
+    let txtUsername = event.target.value;
+    this.setState({
+      username: txtUsername
+    })
+  }
   render(){
     return(
       <React.Fragment>
@@ -41,8 +58,11 @@ class Registration extends Component{
           <TextField type="text" label="Mobile Number" margin="normal"/>
           <br/>
           <TextField type="text" label="City" margin="normal"/>
-          <br/><br/>
-          <Button varient="outlined" color="primary">Register</Button>
+          <br/><br/><hr/>
+          <Button varient="outlined" color="primary" onClick={this.registerUser}>Register</Button>
+          <hr/>
+          <h3>User Details :</h3><br/>
+          <p>Username is : {this.state.username}</p>
         </form>
       </React.Fragment>
     );
