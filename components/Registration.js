@@ -16,6 +16,24 @@ class Registration extends Component{
         <form noValidate autoComplete="off">
           <TextField type="text" label="Username" margin="normal"/>
           <TextField type="password" label="Password" margin="normal"/>
+          <br/><br/>
+          <FormControl component="fieldset">
+            <FormLabel component="legend">Gender :</FormLabel>
+            <RadioGroup aria-label="position" name="position" row>
+             <FormControlLabel
+                value="end"
+                control={<Radio color="primary" />}
+                label="End"
+                labelPlacement="end"
+              /> 
+             <FormControlLabel
+                value="end"
+                control={<Radio color="primary" />}
+                label="End"
+                labelPlacement="end"
+              />
+            </RadioGroup>
+          </FormControl>
         </form>
       </React.Fragment>
     );
