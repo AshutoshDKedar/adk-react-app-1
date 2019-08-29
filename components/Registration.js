@@ -19,11 +19,14 @@ class Registration extends Component{
       city:''
     }
   }
-  registerUser = (event)=>{
-    let txtUsername = event.target.value;
+  handleChange = (event)=>{
+    const {name, value} = event.target;
     this.setState({
-      username: txtUsername
-    })
+        [name]: value
+    });
+  }
+  registerUser = (event)=>{
+    
   }
   render(){
     return(
@@ -31,15 +34,15 @@ class Registration extends Component{
         <h3>Create Your Account :-</h3>
         <hr/>
         <form noValidate autoComplete="off">
-          <TextField type="text" label="Username" value={this.state.username} name="username" margin="normal"/>
+          <TextField type="text" label="Username" margin="normal" name="username" onChange={this.handleChange}/>
           <br/>
-          <TextField type="password" label="Password" margin="normal"/>
+          <TextField type="password" label="Password" margin="normal" name="password" onChange={this.handleChange}/>
           <br/>
-          <TextField type="password" label="Confirm Password" margin="normal"/>
+          <TextField type="password" label="Confirm Password" margin="normal" name="confirmPassword" onChange={this.handleChange}/>
           <br/><br/>
           <FormControl component="fieldset">
             <FormLabel component="legend">Gender :</FormLabel>
-            <RadioGroup aria-label="gender" name="gender" row>
+            <RadioGroup aria-label="gender" name="gender" onChange={this.handleChange} row>
              <FormControlLabel
                 value="male"
                 control={<Radio color="primary" />}
@@ -55,14 +58,17 @@ class Registration extends Component{
             </RadioGroup>
           </FormControl>
           <br/>
-          <TextField type="text" label="Mobile Number" margin="normal"/>
+          <TextField type="text" label="Mobile Number" margin="normal" name="mobileNumber" onChange={this.handleChange}/>
           <br/>
-          <TextField type="text" label="City" margin="normal"/>
+          <TextField type="text" label="City" margin="normal" name="city" onChange={this.handleChange} />
           <br/><br/><hr/>
           <Button varient="outlined" color="primary" onClick={this.registerUser}>Register</Button>
           <hr/>
           <h3>User Details :</h3><br/>
-          <p>Username is : {this.state.username}</p>
+          <p>Username is : {this.state.username}</p><br/>
+          <p>Gender is : {this.state.gender}</p><br/>
+          <p>Mobile Number is : {this.state.mobileNumber}</p><br/>
+          <p>City is : {this.state.city}</p><br/>
         </form>
       </React.Fragment>
     );
