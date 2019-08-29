@@ -31,7 +31,7 @@ class Registration extends Component{
         <h3>Create Your Account :-</h3>
         <hr/>
         <form noValidate autoComplete="off">
-          <TextField type="text" label="Username" name="username" margin="normal"/>
+          <TextField type="text" label="Username" value={this.state.username} name="username" margin="normal"/>
           <br/>
           <TextField type="password" label="Password" margin="normal"/>
           <br/>
